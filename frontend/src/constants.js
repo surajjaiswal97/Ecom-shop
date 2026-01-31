@@ -1,6 +1,6 @@
-// export const BASE_URL =
-//   process.env.NODE_ENV === 'develeopment' ? 'http://localhost:5000' : '';
-export const BASE_URL = ''; // If using proxy
+// Base URL for API requests. Set REACT_APP_BASE_URL in your environment
+// e.g. locally: REACT_APP_BASE_URL=http://localhost:5000
+export const BASE_URL = process.env.REACT_APP_BASE_URL || '';
 export const PRODUCTS_URL = '/api/products';
 export const USERS_URL = '/api/users';
 export const ORDERS_URL = '/api/orders';

@@ -12,7 +12,13 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 const port = process.env.PORT || 5000;
 
-connectDB();
+console.log('🚀 Starting server...');
+console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
+console.log(`PORT: ${port}`);
+
+connectDB().catch((error) => {
+  console.error('⚠️ Database connection failed:', error.message);
+});
 
 const app = express();
 
