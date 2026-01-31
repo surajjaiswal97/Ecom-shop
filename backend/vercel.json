@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "ehurricane",
+    "name": "proshop-v2",
     "builds": [
         {
             "src": "server.js",
